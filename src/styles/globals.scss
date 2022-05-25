@@ -1,7 +1,50 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+:root {
+  --color-background: #1a1d23;
+  --primary: #xxx;
+  --color-heading: #f8f8f8;
+  --color-body: #d7d7d7;
+  --color-info: #bbbbbb;
+  --color-highlight: #ff57b2;
 }
 
-// TODO
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+  font-size: 1.6rem;
+  color: var(--color-body);
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-highlight);
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
